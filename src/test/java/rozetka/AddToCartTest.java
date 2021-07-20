@@ -34,8 +34,6 @@ public class AddToCartTest {
     @Test
     public void addToCartTest(){
         driver.findElement(By.xpath("//main-page-sidebar//a[contains(@href, 'notebooks')]")).click();
-//        WebDriverWait wait = new WebDriverWait(driver, 30);
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[title='Ноутбуки']")));
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("a[title='Ноутбуки']")).click();
         driver.findElement(By.cssSelector("label[for='HP']")).click();
